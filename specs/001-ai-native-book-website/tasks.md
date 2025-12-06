@@ -19,19 +19,19 @@ Assuming a Docusaurus 3 structure:
 - [X] T001 Initialize Docusaurus 3 project with `npx create-docusaurus@latest . classic --typescript` in `/`
 - [X] T002 Configure `docusaurus.config.ts` for project name, tagline, URLs, etc.
 - [X] T003 Install and configure Tailwind CSS into Docusaurus. Create `tailwind.config.js` and `postcss.config.js`. Import `custom.css` into Docusaurus.
-- [ ] T004 Install necessary packages for custom components.
-- [ ] T005 Create `src/components/ui` directory for custom UI components (replacing shadcn/ui).
+- [X] T004 Install necessary packages for custom components.
+- [X] T005 Create `src/components/ui` directory for custom UI components (replacing shadcn/ui).
 
 ## Phase 2: Foundational (Layout, Navigation, Theme Provider)
 
 **Purpose**: Establish global layout, navigation, and theme toggling functionality using Docusaurus theme overrides.
 
-- [ ] T006 Configure `docusaurus.config.ts` for Navbar (global navigation links: Home, Book, About, Contact).
-- [ ] T007 [P] Override Docusaurus Navbar component for custom theme toggle (Dark/Light mode) in `src/theme/Navbar/index.tsx` (NFR-003, US5).
-- [ ] T008 [P] Configure Docusaurus Footer in `docusaurus.config.ts`.
-- [ ] T009 Create `src/pages/index.tsx` for the Home page.
-- [ ] T010 Create `src/pages/about.tsx` for the About page.
-- [ ] T011 Create `src/pages/contact.tsx` for the Contact page.
+- [X] T006 Configure `docusaurus.config.ts` for Navbar (global navigation links: Home, Book, About, Contact).
+- [X] T007 [P] Override Docusaurus Navbar component for custom theme toggle (Dark/Light mode) in `src/theme/Navbar/index.tsx` (NFR-003, US5).
+- [X] T008 [P] Configure Docusaurus Footer in `docusaurus.config.ts`.
+- [X] T009 Create `src/pages/index.tsx` for the Home page.
+- [X] T010 Create `src/pages/about.tsx` for the About page.
+- [X] T011 Create `src/pages/contact.tsx` for the Contact page.
 
 ## Phase 3: User Story 1 - View Home Page (Priority: P1) 🎯 MVP
 
@@ -41,10 +41,10 @@ Assuming a Docusaurus 3 structure:
 
 ### Implementation for User Story 1
 
-- [ ] T012 [US1] Implement Home Hero component in `src/components/custom/HomeHero.tsx` using Tailwind CSS.
-- [ ] T013 [P] [US1] Implement Book Preview component (e.g., featuring chapter cards) in `src/components/custom/BookPreview.tsx` using Tailwind CSS.
-- [ ] T014 [US1] Integrate `HomeHero` and `BookPreview` into `src/pages/index.tsx`.
-- [ ] T015 [US1] Add a clear Call-to-Action (CTA) to the Home page, linking to the Book docs.
+- [X] T012 [US1] Implement Home Hero component in `src/components/custom/HomeHero.tsx` using Tailwind CSS.
+- [X] T013 [P] [US1] Implement Book Preview component (e.g., featuring chapter cards) in `src/components/custom/BookPreview.tsx` using Tailwind CSS.
+- [X] T014 [US1] Integrate `HomeHero` and `BookPreview` into `src/pages/index.tsx`.
+- [X] T015 [US1] Add a clear Call-to-Action (CTA) to the Home page, linking to the Book docs.
 
 ## Phase 4: User Story 2 - Read the Book (Priority: P1)
 
@@ -54,11 +54,11 @@ Assuming a Docusaurus 3 structure:
 
 ### Implementation for User Story 2
 
-- [ ] T016 [US2] Create placeholder MDX files for 5 chapters, each with 2 topics in `docs/` structure (e.g., `docs/01-introduction/01-topic-a.mdx`).
-- [ ] T017 [US2] Configure Docusaurus sidebar in `docusaurus.config.ts` or `_category_.json` files to reflect the 5 chapters.
-- [ ] T018 [P] [US2] Override Docusaurus `DocItem` layout to integrate a custom progress bar component in `src/theme/DocItem/Layout/index.tsx`.
-- [ ] T019 [P] [US2] Implement custom progress bar logic for scroll tracking within doc items.
-- [ ] T020 [US2] Ensure smooth scrolling to chapter anchors via Docusaurus's default behavior or custom scroll logic if needed.
+- [X] T016 [US2] Create placeholder MDX files for 5 chapters, each with 2 topics in `docs/` structure (e.g., `docs/01-introduction/01-topic-a.mdx`).
+- [X] T017 [US2] Configure Docusaurus sidebar in `docusaurus.config.ts` or `_category_.json` files to reflect the 5 chapters.
+- [X] T018 [P] [US2] Override Docusaurus `DocItem` layout to integrate a custom progress bar component in `src/theme/DocItem/Layout/index.tsx`.
+- [X] T019 [P] [US2] Implement custom progress bar logic for scroll tracking within doc items.
+- [X] T020 [US2] Ensure smooth scrolling to chapter anchors via Docusaurus's default behavior or custom scroll logic if needed.
 
 ## Phase 5: User Story 3 - Learn About the Author (Priority: P2)
 
@@ -68,7 +68,7 @@ Assuming a Docusaurus 3 structure:
 
 ### Implementation for User Story 3
 
-- [ ] T021 [US3] Add author's biography and vision content to `src/pages/about.tsx`.
+- [X] T021 [US3] Add author's biography and vision content to `src/pages/about.tsx`.
 
 ## Phase 6: User Story 4 - Join the Waitlist (Priority: P2)
 
@@ -78,10 +78,10 @@ Assuming a Docusaurus 3 structure:
 
 ### Implementation for User Story 4
 
-- [ ] T022 [US4] Implement Waitlist Form component in `src/components/custom/WaitlistForm.tsx` using Tailwind CSS.
-- [ ] T023 [US4] Integrate `WaitlistForm` into `src/pages/contact.tsx`.
-- [ ] T024 [US4] Implement client-side logic in `WaitlistForm.tsx` to save form submissions to `localStorage`.
-- [ ] T025 [US4] Add user feedback for form submission (e.g., success message).
+- [X] T022 [US4] Implement Waitlist Form component in `src/components/custom/WaitlistForm.tsx` using Tailwind CSS.
+- [X] T023 [US4] Integrate `WaitlistForm` into `src/pages/contact.tsx`.
+- [X] T024 [US4] Implement client-side logic in `WaitlistForm.tsx` to save form submissions to `localStorage`.
+- [X] T025 [US4] Add user feedback for form submission (e.g., success message).
 
 ## Phase 7: Polish & Cross-Cutting Concerns
 

@@ -1,0 +1,18 @@
+# Microservices and AI
+
+Integrating AI capabilities within a microservices architecture is a natural fit for AI-Native Driven Development. Microservices promote modularity, independent deployment, and scalability, which are crucial for evolving AI models.
+
+## Best Practices
+
+- **API-First Design**: Define clear APIs for AI services, enabling seamless integration with other microservices.
+- **Stateless AI Services**: Design AI prediction services to be stateless for easier scaling and resilience.
+- **Dedicated AI Microservices**: Encapsulate specific AI models (e.g., recommendation engine, fraud detection) into their own microservices.
+- **Data Contracts**: Establish explicit data contracts for input and output of AI services to ensure compatibility.
+- **Asynchronous Communication**: Use message queues or event streams for communication between AI and non-AI microservices to avoid tight coupling.
+
+## Challenges
+
+- **Data Consistency**: Ensuring consistent data across multiple microservices for AI model training and inference.
+- **Distributed Training**: Managing and orchestrating distributed training pipelines for complex AI models.
+- **Observability**: Monitoring the performance and health of individual AI microservices in a distributed environment.
+- **Version Management**: Handling different versions of AI models deployed across various microservices.
