@@ -105,8 +105,9 @@
 - **NFR-001 (Performance)**: The feature must not negatively impact the site's performance goals (FCP < 1.5s, bundle size < 150KB). All new components must be optimized.
 - **NFR-002 (Accessibility)**: All UI elements must be fully accessible, adhering to ARIA standards and supporting keyboard navigation.
 - **NFR-003 (Design)**: The feature's UI must be mobile-first and align with the established glassmorphism and gradient design language.
-- **NFR-004 (Technology)**: The feature must be implemented using the approved technology stack (Next.js, TypeScript, Tailwind CSS, shadcn/ui, MDX).
+- **NFR-004 (Technology)**: The feature must be implemented using the approved technology stack (Docusaurus 3, TypeScript, Tailwind CSS, MDX).
 - **NFR-005 (Code Quality)**: Code must be written in TypeScript strict mode, and new components should be designed for reusability.
+- **NFR-006 (Constraints)**: The website must contain exactly 4 pages (Home, Book, About, Contact). The book content must be structured into 5 chapters, each containing 2 topics. Deployment must target Vercel (free tier).
 
 ## Success Criteria *(mandatory)*
 

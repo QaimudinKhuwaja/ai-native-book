@@ -19,147 +19,26 @@ description: "Task list template for feature implementation"
 - Include exact file paths in descriptions
 
 ## Path Conventions
-
-- **Single project**: `src/`, `tests/` at repository root
-- **Web app**: `backend/src/`, `frontend/src/`
-- **Mobile**: `api/src/`, `ios/src/` or `android/src/`
-- Paths shown below assume single project - adjust based on plan.md structure
-
-<!-- 
-  ============================================================================
-  IMPORTANT: The tasks below are SAMPLE TASKS for illustration purposes only.
-  
-  The /sp.tasks command MUST replace these with actual tasks based on:
-  - User stories from spec.md (with their priorities P1, P2, P3...)
-  - Feature requirements from plan.md
-  - Entities from data-model.md
-  - Endpoints from contracts/
-  
-  Tasks MUST be organized by user story so each story can be:
-  - Implemented independently
-  - Tested independently
-  - Delivered as an MVP increment
-  
-  DO NOT keep these sample tasks in the generated tasks.md file.
-  ============================================================================
--->
-
-## Phase 1: Setup (Shared Infrastructure)
-
-**Purpose**: Project initialization and basic structure
-
-- [ ] T001 Create project structure per implementation plan
-- [ ] T002 Initialize [language] project with [framework] dependencies
-- [ ] T003 [P] Configure linting and formatting tools
-
----
-
-## Phase 2: Foundational (Blocking Prerequisites)
-
-**Purpose**: Core infrastructure that MUST be complete before ANY user story can be implemented
-
-**⚠️ CRITICAL**: No user story work can begin until this phase is complete
-
-Examples of foundational tasks (adjust based on your project):
-
-- [ ] T004 Setup database schema and migrations framework
-- [ ] T005 [P] Implement authentication/authorization framework
-- [ ] T006 [P] Setup API routing and middleware structure
-- [ ] T007 Create base models/entities that all stories depend on
-- [ ] T008 Configure error handling and logging infrastructure
-- [ ] T009 Setup environment configuration management
-
-**Checkpoint**: Foundation ready - user story implementation can now begin in parallel
-
----
-
-## Phase 3: User Story 1 - [Title] (Priority: P1) 🎯 MVP
-
-**Goal**: [Brief description of what this story delivers]
-
-**Independent Test**: [How to verify this story works on its own]
-
-### Tests for User Story 1 (OPTIONAL - only if tests requested) ⚠️
-
-> **NOTE: Write these tests FIRST, ensure they FAIL before implementation**
-
-- [ ] T010 [P] [US1] Contract test for [endpoint] in tests/contract/test_[name].py
-- [ ] T011 [P] [US1] Integration test for [user journey] in tests/integration/test_[name].py
-
-### Implementation for User Story 1
-
-- [ ] T012 [P] [US1] Create [Entity1] model in src/models/[entity1].py
-- [ ] T013 [P] [US1] Create [Entity2] model in src/models/[entity2].py
-- [ ] T014 [US1] Implement [Service] in src/services/[service].py (depends on T012, T013)
-- [ ] T015 [US1] Implement [endpoint/feature] in src/[location]/[file].py
-- [ ] T016 [US1] Add validation and error handling
-- [ ] T017 [US1] Add logging for user story 1 operations
-
-**Checkpoint**: At this point, User Story 1 should be fully functional and testable independently
-
----
-
-## Phase 4: User Story 2 - [Title] (Priority: P2)
-
-**Goal**: [Brief description of what this story delivers]
-
-**Independent Test**: [How to verify this story works on its own]
-
-### Tests for User Story 2 (OPTIONAL - only if tests requested) ⚠️
-
-- [ ] T018 [P] [US2] Contract test for [endpoint] in tests/contract/test_[name].py
-- [ ] T019 [P] [US2] Integration test for [user journey] in tests/integration/test_[name].py
-
-### Implementation for User Story 2
-
-- [ ] T020 [P] [US2] Create [Entity] model in src/models/[entity].py
-- [ ] T021 [US2] Implement [Service] in src/services/[service].py
-- [ ] T022 [US2] Implement [endpoint/feature] in src/[location]/[file].py
-- [ ] T023 [US2] Integrate with User Story 1 components (if needed)
-
-**Checkpoint**: At this point, User Stories 1 AND 2 should both work independently
-
----
-
-## Phase 5: User Story 3 - [Title] (Priority: P3)
-
-**Goal**: [Brief description of what this story delivers]
-
-**Independent Test**: [How to verify this story works on its own]
-
-### Tests for User Story 3 (OPTIONAL - only if tests requested) ⚠️
-
-- [ ] T024 [P] [US3] Contract test for [endpoint] in tests/contract/test_[name].py
-- [ ] T025 [P] [US3] Integration test for [user journey] in tests/integration/test_[name].py
-
-### Implementation for User Story 3
-
-- [ ] T026 [P] [US3] Create [Entity] model in src/models/[entity].py
-- [ ] T027 [US3] Implement [Service] in src/services/[service].py
-- [ ] T028 [US3] Implement [endpoint/feature] in src/[location]/[file].py
-
-**Checkpoint**: All user stories should now be independently functional
-
----
-
-[Add more user story phases as needed, following the same pattern]
-
----
+Assuming a Docusaurus 3 structure:
+- Pages: `src/pages/`
+- Custom Components: `src/components/custom/`
+- Docusaurus Theme Overrides: `src/theme/`
+- Docs/Content: `docs/`
+- Config: `docusaurus.config.ts`, `tailwind.config.js`, `postcss.config.js`
 
 ## Phase N: Polish & Cross-Cutting Concerns
 
 **Purpose**: Final review and improvements that affect multiple user stories, ensuring constitutional alignment.
 
-- [ ] **TXXX [P] Accessibility Audit**: Manually test all new UI components for keyboard navigation, screen reader compatibility, and ARIA compliance.
-- [ ] **TXXX [P] Performance Audit**: Profile the application using Lighthouse/PageSpeed Insights. Ensure FCP is < 1.5s and bundle size is within the 150KB limit.
-- [ ] **TXXX [P] Responsive UI/UX Review**: Test the application on various devices (mobile, tablet, desktop) to confirm mobile-first design and consistent UX.
-- [ ] **TXXX [P] Theming Review**: Verify that all new components work correctly in both dark and light modes.
-- [ ] **TXXX [P] Code Refactoring & Reusability**: Review new components for potential refactoring into more reusable parts. Ensure TypeScript strict mode is enforced.
-- [ ] **TXXX [P] Documentation**: Update `README.md` or any relevant developer documentation for new components or features.
-- [ ] **TXXX Security Hardening**: Review for common web vulnerabilities (XSS, CSRF, etc.).
-- [ ] **TXXX Run `quickstart.md` validation**: Ensure the project's quickstart guide is up-to-date and works as expected.
-
----
+- [ ] TXXX [P] Accessibility Audit: Manually test all new UI components for keyboard navigation, screen reader compatibility, and ARIA compliance.
+- [ ] TXXX [P] Performance Audit: Profile the application using Lighthouse/PageSpeed Insights. Ensure FCP is < 1.5s and bundle size is within the 150KB limit.
+- [ ] TXXX [P] Responsive UI/UX Review: Test the application on various devices (mobile, tablet, desktop) to confirm mobile-first design and consistent UX.
+- [ ] TXXX [P] Theming Review: Verify that all new components work correctly in both dark and light modes.
+- [ ] TXXX [P] Code Refactoring & Reusability: Review new components for potential refactoring into more reusable parts. Ensure TypeScript strict mode is enforced.
+- [ ] TXXX [P] Documentation: Update `README.md` or any relevant developer documentation for new components or features.
+- [ ] TXXX Security Hardening: Review for common web vulnerabilities (XSS, CSRF, etc.).
+- [ ] TXXX Run `quickstart.md` validation: Ensure the project's quickstart guide is up-to-date and works as expected.
+- [ ] TXXX Final Deployment to Vercel: Ensure the Docusaurus site is correctly built and deployed to Vercel (free tier).
 
 ## Dependencies & Execution Order
 
@@ -174,26 +53,24 @@ Examples of foundational tasks (adjust based on your project):
 
 ### User Story Dependencies
 
-- **User Story 1 (P1)**: Can start after Foundational (Phase 2) - No dependencies on other stories
-- **User Story 2 (P2)**: Can start after Foundational (Phase 2) - May integrate with US1 but should be independently testable
-- **User Story 3 (P3)**: Can start after Foundational (Phase 2) - May integrate with US1/US2 but should be independently testable
+- **User Story 1 (P1 - View Home Page)**: Can start after Foundational (Phase 2) - No dependencies on other stories
+- **User Story 2 (P1 - Read the Book)**: Can start after Foundational (Phase 2) - Requires MDX content in `docs/`
+- **User Story 3 (P2 - Learn About the Author)**: Can start after Foundational (Phase 2) - No dependencies on other stories
+- **User Story 4 (P2 - Join the Waitlist)**: Can start after Foundational (Phase 2) - No dependencies on other stories
+- **User Story 5 (P1 - Mobile and Dark Mode Experience)**: Cross-cutting, tasks integrated throughout, especially in Foundational and Polish phases.
 
 ### Within Each User Story
 
-- Tests (if included) MUST be written and FAIL before implementation
-- Models before services
-- Services before endpoints
-- Core implementation before integration
-- Story complete before moving to next priority
+- Implementation tasks are generally sequential within a story.
+- Docusaurus theme overrides and custom components should be created before integrating into pages/docs.
+- MDX content (`docs/`) should be created as needed by User Story 2.
 
 ### Parallel Opportunities
 
-- All Setup tasks marked [P] can run in parallel
-- All Foundational tasks marked [P] can run in parallel (within Phase 2)
-- Once Foundational phase completes, all user stories can start in parallel (if team capacity allows)
-- All tests for a user story marked [P] can run in parallel
-- Models within a story marked [P] can run in parallel
-- Different user stories can be worked on in parallel by different team members
+- All Setup tasks in Phase 1 can run in parallel where possible (e.g., installing dependencies, configuring Tailwind).
+- Foundational tasks in Phase 2 can be worked on in parallel (e.g., navigation, theme provider, page creation).
+- Once Foundational phase completes, User Stories 1, 3, and 4 can theoretically be worked on in parallel by different team members. User Story 2 has a dependency on MDX content creation which can be parallelized.
+- Within User Story phases, tasks marked with [P] can be parallelized.
 
 ---
 

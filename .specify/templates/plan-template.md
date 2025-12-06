@@ -12,27 +12,28 @@
 ## Technical Context
 
 **Language/Version**: TypeScript (strict mode)
-**Primary Dependencies**: Next.js 15, React 19, Tailwind CSS, shadcn/ui, MDX
-**Storage**: N/A (Content is managed via MDX files in the git repository)
-**Testing**: Jest / React Testing Library
+**Primary Dependencies**: Docusaurus 3, React 19, Tailwind CSS, MDX
+**Storage**: localStorage for waitlist form
+**Testing**: Jest / React Testing Library (for custom components)
 **Target Platform**: Modern Web Browsers
-**Project Type**: Web Application (Full-stack with Next.js)
+**Project Type**: Static Site Generator (Docusaurus)
 **Performance Goals**: FCP < 1.5s, Total JS bundle < 150KB (excluding images)
-**Constraints**: Mobile-first responsive design, Dark/Light themes, 100% accessibility
+**Constraints**: 4 pages (Home, Book, About, Contact), 5 chapters x 2 topics, Mobile-first responsive design, Dark/Light themes, 100% accessibility, Vercel deployment
 **Scale/Scope**: Premium Book Website
 
 ## Constitution Check
 
 *GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
 
-- [ ] **UI Libraries**: Are only `shadcn/ui` and `Tailwind CSS` used?
+- [ ] **UI Libraries**: Is only `Tailwind CSS` used for styling? No other external UI component libraries are permitted.
 - [ ] **Design**: Is the UI mobile-first? Does it incorporate glassmorphism and gradients?
-- [ ] **Content**: Is all book content authored in MDX and located in `/content/chapters/`?
+- [ ] **Content**: Is all book content authored in MDX? Is it structured into 5 chapters, each with 2 topics? Is it located in `/content/chapters/` (or Docusaurus equivalent)?
 - [ ] **Theme**: Does the application support both dark and light modes with a toggle?
 - [ ] **Performance**: Is the FCP under 1.5s? Is the bundle size (sans images) under 150KB?
 - [ ] **Accessibility**: Is the application 100% accessible (ARIA, keyboard navigation)?
 - [ ] **Code Quality**: Is TypeScript `strict` mode enabled? Are components reusable?
-- [ ] **Tech Stack**: Does the implementation use Next.js 15, Tailwind, and MDX?
+- [ ] **Constraints**: Are there exactly 4 pages (Home, Book, About, Contact)? Is deployment targeting Vercel?
+- [ ] **Tech Stack**: Does the implementation use Docusaurus 3, Tailwind, and MDX?
 
 ## Project Structure
 

@@ -1,56 +1,63 @@
 <!--
 ---
 sync_impact_report:
-  version_change: "none → 1.0.0"
-  modified_principles: []
+  version_change: "1.0.0 → 1.0.1"
+  modified_principles:
+    - old: "I. Zero External UI Libraries"
+      new: "I. Zero External UI Libraries Except Tailwind"
+    - old: "III. MDX for All Book Content"
+      new: "III. MDX for All Book Content (with structure details)"
+    - old: "VII. Code Quality and Reusability"
+      new: "VII. TypeScript Strict Mode & Reusable Components"
   added_sections:
-    - "Core Principles"
-    - "Technology Stack"
-    - "Governance"
-  removed_sections: []
+    - "Constraints"
+  removed_sections:
+    - "Technology Stack (Previous: Next.js 15, shadcn/ui)"
   updated_templates:
     - path: ".specify/templates/plan-template.md"
-      status: "pending"
+      status: "updated"
     - path: ".specify/templates/spec-template.md"
-      status: "pending"
+      status: "updated"
     - path: ".specify/templates/tasks-template.md"
-      status: "pending"
+      status: "updated"
   todos: []
 ---
 -->
-# AI-Native Driven Development – Premium Book Website Constitution
+# AI-Native Driven Development – Premium Book Website (Docusaurus 3 + Tailwind + MDX) Constitution
 
 ## Core Principles
 
-### I. Zero External UI Libraries
-Rely only on shadcn/ui and Tailwind CSS. No other component libraries are permitted. This ensures a consistent and lightweight frontend.
+### I. Zero External UI Libraries Except Tailwind
+Rely only on Tailwind CSS for styling. No other component libraries or UI frameworks are permitted. This ensures a consistent and lightweight frontend.
 
-### II. Mobile-First, Modern Design
+### II. Mobile-First, Glassmorphism + Gradient Design
 All UI must be responsive, starting with mobile screens. Implement glassmorphism and gradient effects for a modern, visually appealing aesthetic.
 
 ### III. MDX for All Book Content
-All book chapters and content must be written in MDX. This allows for easy updates, component embedding, and keeps content separate from presentation. Chapter content must be located in `/content/chapters/`.
+All book chapters and content must be written in MDX to allow for easy updates and component embedding. The book must have exactly 5 chapters, each with 2 topics. Chapter content must be located in `/content/chapters/`.
 
-### IV. Dark/Light Mode
-The entire application must support both dark and light themes, with a user-controlled toggle. This is a mandatory accessibility and user experience feature.
+### IV. Dark/Light Mode Toggle
+The entire application must support both dark and light themes, with a user-toggle. This is a mandatory accessibility and user experience feature.
 
-### V. Performance First
+### V. Lightning Fast Performance
 First Contentful Paint (FCP) must be under 1.5 seconds. Total bundle size (excluding images) must not exceed 150KB. Performance is a key feature, not an afterthought.
 
-### VI. Accessibility as a Requirement
-The application must be 100% accessible. This includes strict adherence to ARIA standards and ensuring full keyboard navigation support for all interactive elements.
+### VI. 100% Accessible (ARIA + Keyboard Nav)
+Strict adherence to ARIA standards and ensure full keyboard navigation.
 
-### VII. Code Quality and Reusability
-All components must be designed for reusability. TypeScript's strict mode must be enabled and enforced across the entire codebase to ensure type safety and code quality.
+### VII. TypeScript Strict Mode & Reusable Components
+TypeScript's strict mode must be enabled and enforced. All components must be designed for reusability.
 
 ## Technology Stack
 The project will exclusively use the following technologies:
-- Next.js 15
+- Docusaurus 3
 - Tailwind CSS
-- shadcn/ui
 - MDX
+
+## Constraints
+The website must contain exactly 4 pages: Home, Book, About, and Contact. The book content must be structured into 5 chapters, each containing 2 topics. Deployment must target Vercel (free tier).
 
 ## Governance
 All pull requests and code reviews must verify compliance with this constitution. Any deviation requires an explicit exemption documented in an Architectural Decision Record (ADR).
 
-**Version**: 1.0.0 | **Ratified**: 2025-12-06 | **Last Amended**: 2025-12-06
+**Version**: 1.0.1 | **Ratified**: 2025-12-06 | **Last Amended**: 2025-12-06
