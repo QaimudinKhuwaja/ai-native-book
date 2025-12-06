@@ -148,14 +148,16 @@ Examples of foundational tasks (adjust based on your project):
 
 ## Phase N: Polish & Cross-Cutting Concerns
 
-**Purpose**: Improvements that affect multiple user stories
+**Purpose**: Final review and improvements that affect multiple user stories, ensuring constitutional alignment.
 
-- [ ] TXXX [P] Documentation updates in docs/
-- [ ] TXXX Code cleanup and refactoring
-- [ ] TXXX Performance optimization across all stories
-- [ ] TXXX [P] Additional unit tests (if requested) in tests/unit/
-- [ ] TXXX Security hardening
-- [ ] TXXX Run quickstart.md validation
+- [ ] **TXXX [P] Accessibility Audit**: Manually test all new UI components for keyboard navigation, screen reader compatibility, and ARIA compliance.
+- [ ] **TXXX [P] Performance Audit**: Profile the application using Lighthouse/PageSpeed Insights. Ensure FCP is < 1.5s and bundle size is within the 150KB limit.
+- [ ] **TXXX [P] Responsive UI/UX Review**: Test the application on various devices (mobile, tablet, desktop) to confirm mobile-first design and consistent UX.
+- [ ] **TXXX [P] Theming Review**: Verify that all new components work correctly in both dark and light modes.
+- [ ] **TXXX [P] Code Refactoring & Reusability**: Review new components for potential refactoring into more reusable parts. Ensure TypeScript strict mode is enforced.
+- [ ] **TXXX [P] Documentation**: Update `README.md` or any relevant developer documentation for new components or features.
+- [ ] **TXXX Security Hardening**: Review for common web vulnerabilities (XSS, CSRF, etc.).
+- [ ] **TXXX Run `quickstart.md` validation**: Ensure the project's quickstart guide is up-to-date and works as expected.
 
 ---
 

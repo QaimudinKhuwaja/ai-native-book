@@ -6,6 +6,7 @@ param(
     [string]$ShortName,
     [int]$Number = 0,
     [switch]$Help,
+    [string]$FeatureDescriptionFile,
     [Parameter(ValueFromRemainingArguments = $true)]
     [string[]]$FeatureDescription
 )
@@ -13,23 +14,33 @@ $ErrorActionPreference = 'Stop'
 
 # Show help if requested
 if ($Help) {
-    Write-Host "Usage: ./create-new-feature.ps1 [-Json] [-ShortName <name>] [-Number N] <feature description>"
+    Write-Host "Usage: ./create-new-feature.ps1 [-Json] [-ShortName <name>] [-Number N] [<feature description> | -FeatureDescriptionFile <file>]"
     Write-Host ""
     Write-Host "Options:"
-    Write-Host "  -Json               Output in JSON format"
-    Write-Host "  -ShortName <name>   Provide a custom short name (2-4 words) for the branch"
-    Write-Host "  -Number N           Specify branch number manually (overrides auto-detection)"
-    Write-Host "  -Help               Show this help message"
+    Write-Host "  -Json                     Output in JSON format"
+    Write-Host "  -ShortName <name>         Provide a custom short name (2-4 words) for the branch"
+    Write-Host "  -Number N                 Specify branch number manually (overrides auto-detection)"
+    Write-Host "  -FeatureDescriptionFile   Path to a file containing the feature description"
+    Write-Host "  -Help                     Show this help message"
     Write-Host ""
     Write-Host "Examples:"
     Write-Host "  ./create-new-feature.ps1 'Add user authentication system' -ShortName 'user-auth'"
-    Write-Host "  ./create-new-feature.ps1 'Implement OAuth2 integration for API'"
+    Write-Host "  ./create-new-feature.ps1 -FeatureDescriptionFile ./description.txt"
     exit 0
 }
 
 # Check if feature description provided
-if (-not $FeatureDescription -or $FeatureDescription.Count -eq 0) {
-    Write-Error "Usage: ./create-new-feature.ps1 [-Json] [-ShortName <name>] <feature description>"
+if ($FeatureDescriptionFile) {
+    if (Test-Path $FeatureDescriptionFile) {
+        $featureDesc = Get-Content $FeatureDescriptionFile -Raw
+    } else {
+        Write-Error "Feature description file not found: $FeatureDescriptionFile"
+        exit 1
+    }
+} elseif ($FeatureDescription) {
+    $featureDesc = ($FeatureDescription -join ' ').Trim()
+} else {
+    Write-Error "Usage: ./create-new-feature.ps1 [-Json] [-ShortName <name>] [<feature description> | -FeatureDescriptionFile <file>]"
     exit 1
 }
 
@@ -271,7 +282,7 @@ if (Test-Path $template) {
 
 # Auto-create history/prompts/<branch-name>/ directory (same as specs/<branch-name>/)
 # This keeps naming consistent across branch, specs, and prompts directories
-$promptsDir = Join-Path $repoRoot 'history' 'prompts' $branchName
+$promptsDir = Join-Path $repoRoot "history\prompts\$branchName"
 New-Item -ItemType Directory -Path $promptsDir -Force | Out-Null
 
 # Set the SPECIFY_FEATURE environment variable for the current session

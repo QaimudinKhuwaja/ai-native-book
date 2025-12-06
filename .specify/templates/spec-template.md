@@ -100,6 +100,14 @@
 - **[Entity 1]**: [What it represents, key attributes without implementation]
 - **[Entity 2]**: [What it represents, relationships to other entities]
 
+### Non-Functional Requirements (Constitution Alignment) *(mandatory)*
+
+- **NFR-001 (Performance)**: The feature must not negatively impact the site's performance goals (FCP < 1.5s, bundle size < 150KB). All new components must be optimized.
+- **NFR-002 (Accessibility)**: All UI elements must be fully accessible, adhering to ARIA standards and supporting keyboard navigation.
+- **NFR-003 (Design)**: The feature's UI must be mobile-first and align with the established glassmorphism and gradient design language.
+- **NFR-004 (Technology)**: The feature must be implemented using the approved technology stack (Next.js, TypeScript, Tailwind CSS, shadcn/ui, MDX).
+- **NFR-005 (Code Quality)**: Code must be written in TypeScript strict mode, and new components should be designed for reusability.
+
 ## Success Criteria *(mandatory)*
 
 <!--

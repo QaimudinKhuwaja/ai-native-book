@@ -1,55 +1,56 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+<!--
+---
+sync_impact_report:
+  version_change: "none → 1.0.0"
+  modified_principles: []
+  added_sections:
+    - "Core Principles"
+    - "Technology Stack"
+    - "Governance"
+  removed_sections: []
+  updated_templates:
+    - path: ".specify/templates/plan-template.md"
+      status: "pending"
+    - path: ".specify/templates/spec-template.md"
+      status: "pending"
+    - path: ".specify/templates/tasks-template.md"
+      status: "pending"
+  todos: []
+---
+-->
+# AI-Native Driven Development – Premium Book Website Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### I. Zero External UI Libraries
+Rely only on shadcn/ui and Tailwind CSS. No other component libraries are permitted. This ensures a consistent and lightweight frontend.
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### II. Mobile-First, Modern Design
+All UI must be responsive, starting with mobile screens. Implement glassmorphism and gradient effects for a modern, visually appealing aesthetic.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### III. MDX for All Book Content
+All book chapters and content must be written in MDX. This allows for easy updates, component embedding, and keeps content separate from presentation. Chapter content must be located in `/content/chapters/`.
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### IV. Dark/Light Mode
+The entire application must support both dark and light themes, with a user-controlled toggle. This is a mandatory accessibility and user experience feature.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### V. Performance First
+First Contentful Paint (FCP) must be under 1.5 seconds. Total bundle size (excluding images) must not exceed 150KB. Performance is a key feature, not an afterthought.
 
-### [PRINCIPLE_6_NAME]
+### VI. Accessibility as a Requirement
+The application must be 100% accessible. This includes strict adherence to ARIA standards and ensuring full keyboard navigation support for all interactive elements.
 
+### VII. Code Quality and Reusability
+All components must be designed for reusability. TypeScript's strict mode must be enabled and enforced across the entire codebase to ensure type safety and code quality.
 
-[PRINCIPLE__DESCRIPTION]
-
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
-
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
-
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
-
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+## Technology Stack
+The project will exclusively use the following technologies:
+- Next.js 15
+- Tailwind CSS
+- shadcn/ui
+- MDX
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
+All pull requests and code reviews must verify compliance with this constitution. Any deviation requires an explicit exemption documented in an Architectural Decision Record (ADR).
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
-
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Version**: 1.0.0 | **Ratified**: 2025-12-06 | **Last Amended**: 2025-12-06

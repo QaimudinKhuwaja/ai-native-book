@@ -11,27 +11,28 @@
 
 ## Technical Context
 
-<!--
-  ACTION REQUIRED: Replace the content in this section with the technical details
-  for the project. The structure here is presented in advisory capacity to guide
-  the iteration process.
--->
-
-**Language/Version**: [e.g., Python 3.11, Swift 5.9, Rust 1.75 or NEEDS CLARIFICATION]  
-**Primary Dependencies**: [e.g., FastAPI, UIKit, LLVM or NEEDS CLARIFICATION]  
-**Storage**: [if applicable, e.g., PostgreSQL, CoreData, files or N/A]  
-**Testing**: [e.g., pytest, XCTest, cargo test or NEEDS CLARIFICATION]  
-**Target Platform**: [e.g., Linux server, iOS 15+, WASM or NEEDS CLARIFICATION]
-**Project Type**: [single/web/mobile - determines source structure]  
-**Performance Goals**: [domain-specific, e.g., 1000 req/s, 10k lines/sec, 60 fps or NEEDS CLARIFICATION]  
-**Constraints**: [domain-specific, e.g., <200ms p95, <100MB memory, offline-capable or NEEDS CLARIFICATION]  
-**Scale/Scope**: [domain-specific, e.g., 10k users, 1M LOC, 50 screens or NEEDS CLARIFICATION]
+**Language/Version**: TypeScript (strict mode)
+**Primary Dependencies**: Next.js 15, React 19, Tailwind CSS, shadcn/ui, MDX
+**Storage**: N/A (Content is managed via MDX files in the git repository)
+**Testing**: Jest / React Testing Library
+**Target Platform**: Modern Web Browsers
+**Project Type**: Web Application (Full-stack with Next.js)
+**Performance Goals**: FCP < 1.5s, Total JS bundle < 150KB (excluding images)
+**Constraints**: Mobile-first responsive design, Dark/Light themes, 100% accessibility
+**Scale/Scope**: Premium Book Website
 
 ## Constitution Check
 
 *GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
 
-[Gates determined based on constitution file]
+- [ ] **UI Libraries**: Are only `shadcn/ui` and `Tailwind CSS` used?
+- [ ] **Design**: Is the UI mobile-first? Does it incorporate glassmorphism and gradients?
+- [ ] **Content**: Is all book content authored in MDX and located in `/content/chapters/`?
+- [ ] **Theme**: Does the application support both dark and light modes with a toggle?
+- [ ] **Performance**: Is the FCP under 1.5s? Is the bundle size (sans images) under 150KB?
+- [ ] **Accessibility**: Is the application 100% accessible (ARIA, keyboard navigation)?
+- [ ] **Code Quality**: Is TypeScript `strict` mode enabled? Are components reusable?
+- [ ] **Tech Stack**: Does the implementation use Next.js 15, Tailwind, and MDX?
 
 ## Project Structure
 
