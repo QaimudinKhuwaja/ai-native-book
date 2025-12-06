@@ -78,7 +78,7 @@ const config: Config = {
         {to: '/about', label: 'About', position: 'left'},
         {to: '/contact', label: 'Contact', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/QaimudinKhuwaja/ai-native-book.git',
           label: 'GitHub',
           position: 'right',
         },
@@ -86,7 +86,16 @@ const config: Config = {
     },
     footer: {
       style: 'dark',
-      links: [], // Removed all links for simplicity
+      links: [
+        {
+          title: 'Community',
+          items: [
+            {label: 'GitHub', href: 'https://github.com/QaimudinKhuwaja'},
+            {label: 'Facebook', href: 'https://www.facebook.com/QaimudinKhuwaja'},
+            {label: 'LinkedIn', href: 'https://www.linkedin.com/in/QaimudinKhuwaja'},
+          ],
+        },
+      ],
       copyright: `Copyright © ${new Date().getFullYear()} AI-Native Book. Built with Docusaurus.`,
     },
     prism: {
