@@ -2,28 +2,29 @@ import React from 'react';
 import {useThemeConfig, useColorMode} from '@docusaurus/theme-common';
 import {
   splitNavbarItems,
-  useNavbarConfig,
   useNavbarMobileSidebar,
 } from '@docusaurus/theme-common/internal';
 import NavbarItem from '@theme/NavbarItem';
-import NavbarColorModeToggle from '@theme/Navbar/ColorModeToggle';
+import NavbarColorModeToggle from '@theme/Navbar/ColorModeToggle'; // Keep this if we plan to use the default toggle
 import SearchBar from '@theme/SearchBar';
 import NavbarMobileSidebarToggle from '@theme/Navbar/MobileSidebar/Toggle';
 import NavbarLogo from '@theme/Navbar/Logo';
 import NavbarSearch from '@theme/Navbar/Search';
 
-import styles from './index.module.css';
+// Import the default Navbar from theme-original
+import DefaultNavbar from '@theme-original/Navbar';
+
+import styles from './index.module.css'; // This file might not be necessary if using default Docusaurus CSS classes
 
 function Navbar(): JSX.Element {
   const {
-    navbar: {hideOnScroll, style},
+    navbar: {hideOnScroll, style, items}, // Access items directly from navbar config
   } = useThemeConfig();
   const {colorMode, setColorMode} = useColorMode();
-  const {navbarHook, navbarCustom, style: navbarStyle} = useNavbarConfig();
-
-  const [leftItems, rightItems] = splitNavbarItems(navbarHook.items);
-
   const mobileSidebar = useNavbarMobileSidebar();
+
+  // Split items based on position for rendering
+  const [leftItems, rightItems] = splitNavbarItems(items);
 
   // Custom Theme Toggle
   const toggleTheme = () => {
@@ -31,20 +32,16 @@ function Navbar(): JSX.Element {
   };
 
   return (
-    <nav
-      className={styles.navbar}
-      style={{
-        backgroundColor: navbarStyle?.backgroundColor || 'var(--ifm-navbar-background-color)',
-      }}>
-      <div className={styles.navbarInner}>
+    <nav className="navbar navbar--fixed-top">
+      <div className="navbar__inner">
         <NavbarMobileSidebarToggle />
         <NavbarLogo />
-        <ul className={styles.navbarItems}>
+        <ul className="navbar__items">
           {leftItems.map((item, i) => (
             <NavbarItem {...item} key={i} />
           ))}
         </ul>
-        <ul className={styles.navbarItems}>
+        <ul className="navbar__items navbar__items--right">
           {rightItems.map((item, i) => (
             <NavbarItem {...item} key={i} />
           ))}

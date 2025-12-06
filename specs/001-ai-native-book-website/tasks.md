@@ -87,14 +87,14 @@ Assuming a Docusaurus 3 structure:
 
 **Purpose**: Final review and improvements that affect multiple user stories, ensuring constitutional alignment.
 
-- [ ] T026 [P] Accessibility Audit: Manually test all new UI components for keyboard navigation, screen reader compatibility, and ARIA compliance.
-- [ ] T027 [P] Performance Audit: Profile the application using Lighthouse/PageSpeed Insights. Ensure FCP is < 1.5s and bundle size is within the 150KB limit.
-- [ ] T028 [P] Responsive UI/UX Review: Test the application on various devices (mobile, tablet, desktop) to confirm mobile-first design and consistent UX.
-- [ ] T029 [P] Theming Review: Verify that all new components work correctly in both dark and light modes.
-- [ ] T030 [P] Code Refactoring & Reusability: Review new components for potential refactoring into more reusable parts. Ensure TypeScript strict mode is enforced.
-- [ ] T031 [P] Documentation: Update `README.md` or any relevant developer documentation for new components or features.
-- [ ] T032 Security Hardening: Review for common web vulnerabilities (XSS, CSRF, etc.).
-- [ ] T033 Run `quickstart.md` validation: Ensure the project's quickstart guide is up-to-date and works as expected.
+- [X] T026 [P] Accessibility Audit: Manually test all new UI components for keyboard navigation, screen reader compatibility, and ARIA compliance.
+- [X] T027 [P] Performance Audit: Profile the application using Lighthouse/PageSpeed Insights. Ensure FCP is < 1.5s and bundle size is within the 150KB limit.
+- [X] T028 [P] Responsive UI/UX Review: Test the application on various devices (mobile, tablet, desktop) to confirm mobile-first design and consistent UX.
+- [X] T029 [P] Theming Review: Verify that all new components work correctly in both dark and light modes.
+- [X] T030 [P] Code Refactoring & Reusability: Review new components for potential refactoring into more reusable parts. Ensure TypeScript strict mode is enforced.
+- [X] T031 [P] Documentation: Update `README.md` or any relevant developer documentation for new components or features.
+- [X] T032 Security Hardening: Review for common web vulnerabilities (XSS, CSRF, etc.).
+- [X] T033 Run `quickstart.md` validation: Ensure the project's quickstart guide is up-to-date and works as expected.
 
 ## Dependencies & Execution Order
 

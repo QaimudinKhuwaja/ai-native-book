@@ -11,7 +11,10 @@ function WaitlistForm() {
     const existingWaitlist = JSON.parse(localStorage.getItem('waitlist') || '[]');
     const newEntry = { name, email, timestamp: new Date().toISOString() };
     const updatedWaitlist = [...existingWaitlist, newEntry];
-    localStorage.setItem('waitlist', JSON.stringify(updatedWaitlist);
+    localStorage.setItem('waitlist', JSON.stringify(updatedWaitlist)); // <-- parenthesis fixed
+    setMessage('You have successfully joined the waitlist!');
+    setName('');
+    setEmail('');
   };
 
   return (
