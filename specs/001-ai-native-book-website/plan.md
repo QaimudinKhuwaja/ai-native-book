@@ -4,12 +4,12 @@
 **Input**: Feature specification from `specs/001-ai-native-book-website/spec.md`
 
 ## Summary
-This plan outlines the technical implementation for the AI-Native Book Website using Docusaurus 3. The project will leverage Docusaurus's powerful documentation framework, MDX support, and theme customization capabilities. The focus remains on creating a high-performance, accessible, and visually appealing user experience with a modern, mobile-first design, preserving the core principles and success criteria.
+This plan outlines the technical implementation for the AI-Native Book Website using Docusaurus 3 and Tailwind CSS. The project will leverage Docusaurus's powerful documentation framework, MDX support, and theme customization capabilities. The focus remains on creating a high-performance, accessible, and visually appealing user experience with a modern, mobile-first design, preserving the core principles and success criteria, **without relying on shadcn/ui**.
 
 ## Technical Context
 
 **Language/Version**: TypeScript (strict mode)
-**Primary Dependencies**: Docusaurus 3, React 19, Tailwind CSS, shadcn/ui, MDX
+**Primary Dependencies**: Docusaurus 3, React 19, Tailwind CSS, MDX
 **Storage**: localStorage for waitlist form
 **Testing**: Jest / React Testing Library (for custom components)
 **Target Platform**: Modern Web Browsers
@@ -21,14 +21,14 @@ This plan outlines the technical implementation for the AI-Native Book Website u
 ## Constitution Check
 *GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
 
-- [X] **UI Libraries**: Are only `shadcn/ui` and `Tailwind CSS` used?
+- [X] **UI Libraries**: Only `Tailwind CSS` is used for styling. No external UI component libraries like shadcn/ui are permitted.
 - [X] **Design**: Is the UI mobile-first? Does it incorporate glassmorphism and gradients?
 - [X] **Content**: Is all book content authored in MDX and located in `/docs/` (Docusaurus docs structure)?
 - [X] **Theme**: Does the application support both dark and light modes with a toggle?
 - [X] **Performance**: Is the FCP under 1.5s? Is the bundle size (sans images) under 150KB?
 - [X] **Accessibility**: Is the application 100% accessible (ARIA, keyboard navigation)?
 - [X] **Code Quality**: Is TypeScript `strict` mode enabled? Are components reusable?
-- [X] **Tech Stack**: Does the implementation use Docusaurus 3, Tailwind, and MDX? (Adjusted from Next.js per user request)
+- [X] **Tech Stack**: Does the implementation use Docusaurus 3, Tailwind, and MDX? (shadcn/ui explicitly excluded per user request)
 
 ## Project Structure
 

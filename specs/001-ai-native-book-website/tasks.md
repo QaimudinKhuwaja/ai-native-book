@@ -12,15 +12,15 @@
 ## Path Conventions
 Assuming a Docusaurus 3 structure:
 
-## Phase 1: Setup (Docusaurus Initialization, Tailwind, shadcn)
+## Phase 1: Setup (Docusaurus Initialization, Tailwind)
 
-**Purpose**: Initialize the Docusaurus project and configure core styling/UI libraries.
+**Purpose**: Initialize the Docusaurus project and configure core styling library.
 
 - [X] T001 Initialize Docusaurus 3 project with `npx create-docusaurus@latest . classic --typescript` in `/`
 - [X] T002 Configure `docusaurus.config.ts` for project name, tagline, URLs, etc.
-- [ ] T003 Install and configure Tailwind CSS into Docusaurus. Create `tailwind.config.js` and `postcss.config.js`. Import `custom.css` into Docusaurus. (MANUAL INTERVENTION REQUIRED)
-- [ ] T004 Install and configure shadcn/ui. Run `npx shadcn-ui@latest init` and select appropriate settings.
-- [ ] T005 Add initial components using shadcn/ui. Run `npx shadcn-ui@latest add button` in `src/components/ui/button.tsx`
+- [X] T003 Install and configure Tailwind CSS into Docusaurus. Create `tailwind.config.js` and `postcss.config.js`. Import `custom.css` into Docusaurus.
+- [ ] T004 Install necessary packages for custom components.
+- [ ] T005 Create `src/components/ui` directory for custom UI components (replacing shadcn/ui).
 
 ## Phase 2: Foundational (Layout, Navigation, Theme Provider)
 
@@ -41,8 +41,8 @@ Assuming a Docusaurus 3 structure:
 
 ### Implementation for User Story 1
 
-- [ ] T012 [US1] Implement Home Hero component in `src/components/custom/HomeHero.tsx`.
-- [ ] T013 [P] [US1] Implement Book Preview component (e.g., featuring chapter cards) in `src/components/custom/BookPreview.tsx`.
+- [ ] T012 [US1] Implement Home Hero component in `src/components/custom/HomeHero.tsx` using Tailwind CSS.
+- [ ] T013 [P] [US1] Implement Book Preview component (e.g., featuring chapter cards) in `src/components/custom/BookPreview.tsx` using Tailwind CSS.
 - [ ] T014 [US1] Integrate `HomeHero` and `BookPreview` into `src/pages/index.tsx`.
 - [ ] T015 [US1] Add a clear Call-to-Action (CTA) to the Home page, linking to the Book docs.
 
@@ -78,7 +78,7 @@ Assuming a Docusaurus 3 structure:
 
 ### Implementation for User Story 4
 
-- [ ] T022 [US4] Implement Waitlist Form component in `src/components/custom/WaitlistForm.tsx` using shadcn/ui components.
+- [ ] T022 [US4] Implement Waitlist Form component in `src/components/custom/WaitlistForm.tsx` using Tailwind CSS.
 - [ ] T023 [US4] Integrate `WaitlistForm` into `src/pages/contact.tsx`.
 - [ ] T024 [US4] Implement client-side logic in `WaitlistForm.tsx` to save form submissions to `localStorage`.
 - [ ] T025 [US4] Add user feedback for form submission (e.g., success message).
