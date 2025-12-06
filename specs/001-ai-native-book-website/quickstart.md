@@ -1,4 +1,4 @@
-# Quickstart: AI-Native Book Website
+# Quickstart: AI-Native Book Website (Docusaurus)
 
 ## Prerequisites
 - Node.js (v18 or later)
@@ -6,7 +6,12 @@
 
 ## Setup
 1. Clone the repository.
-2. Install dependencies:
+2. Initialize Docusaurus project (if not already done, this command is for setting up a new docusaurus project):
+   ```bash
+   npx create-docusaurus@latest . classic --typescript
+   ```
+   **NOTE**: This project is assumed to be already initialized.
+3. Install dependencies:
    ```bash
    npm install
    ```
@@ -14,14 +19,15 @@
    ```bash
    yarn
    ```
+4. Configure Tailwind CSS and PostCSS (Docusaurus integration).
 
 ## Running the Development Server
 ```bash
-npm run dev
+npm run start
 ```
 or
 ```bash
-yarn dev
+yarn start
 ```
 The application will be available at `http://localhost:3000`.
 
@@ -34,11 +40,9 @@ or
 yarn build
 ```
 
-## Running in Production Mode
+## Running in Production Mode (serving static build)
 ```bash
-npm run start
+npm install -g serve
+serve -s build
 ```
-or
-```bash
-yarn start
-```
+The static site will be served, typically at `http://localhost:3000`.
