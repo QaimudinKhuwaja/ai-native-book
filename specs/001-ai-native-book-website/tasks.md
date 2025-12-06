@@ -16,9 +16,9 @@ Assuming a Docusaurus 3 structure:
 
 **Purpose**: Initialize the Docusaurus project and configure core styling/UI libraries.
 
-- [ ] T001 Initialize Docusaurus 3 project with `npx create-docusaurus@latest . classic --typescript` in `/`
-- [ ] T002 Configure `docusaurus.config.ts` for project name, tagline, URLs, etc.
-- [ ] T003 Install and configure Tailwind CSS into Docusaurus. Create `tailwind.config.js` and `postcss.config.js`. Import `custom.css` into Docusaurus.
+- [X] T001 Initialize Docusaurus 3 project with `npx create-docusaurus@latest . classic --typescript` in `/`
+- [X] T002 Configure `docusaurus.config.ts` for project name, tagline, URLs, etc.
+- [ ] T003 Install and configure Tailwind CSS into Docusaurus. Create `tailwind.config.js` and `postcss.config.js`. Import `custom.css` into Docusaurus. (MANUAL INTERVENTION REQUIRED)
 - [ ] T004 Install and configure shadcn/ui. Run `npx shadcn-ui@latest init` and select appropriate settings.
 - [ ] T005 Add initial components using shadcn/ui. Run `npx shadcn-ui@latest add button` in `src/components/ui/button.tsx`
 
