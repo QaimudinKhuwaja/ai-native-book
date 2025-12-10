@@ -102,12 +102,15 @@
 
 ### Non-Functional Requirements (Constitution Alignment) *(mandatory)*
 
-- **NFR-001 (Performance)**: The feature must not negatively impact the site's performance goals (FCP < 1.5s, bundle size < 150KB). All new components must be optimized.
-- **NFR-002 (Accessibility)**: All UI elements must be fully accessible, adhering to ARIA standards and supporting keyboard navigation.
-- **NFR-003 (Design)**: The feature's UI must be mobile-first and align with the established glassmorphism and gradient design language.
-- **NFR-004 (Technology)**: The feature must be implemented using the approved technology stack (Docusaurus 3, TypeScript, Tailwind CSS, MDX).
-- **NFR-005 (Code Quality)**: Code must be written in TypeScript strict mode, and new components should be designed for reusability.
-- **NFR-006 (Constraints)**: The website must contain exactly 4 pages (Home, Book, About, Contact). The book content must be structured into 5 chapters, each containing 2 topics. Deployment must target Vercel (free tier).
+- **NFR-001 (Core Vision)**: The feature must align with the vision of a premium, mobile-first educational book on Physical AI.
+- **NFR-002 (Core Philosophy)**: The feature must represent AI as embodied intelligence.
+- **NFR-003 (UI Principles)**: The UI must be mobile-first and use glassmorphism, soft gradients, and a sticky mobile bottom nav.
+- **NFR-004 (Technology Standards)**: The feature must be built with Docusaurus, Tailwind CSS, and MDX.
+- **NFR-005 (Structure)**: The feature must adhere to the 4-page site structure and the 5x2 chapter/topic model.
+- **NFR-006 (Navigation)**: The navigation must be keyboard-accessible and implemented with a sticky bottom navbar (mobile) and sidebar (desktop).
+- **NFR-007 (Performance)**: The feature must be optimized for a fast initial load, lazy-loading, and minimal scripts.
+- **NFR-008 (Accessibility)**: The feature must meet accessibility standards (semantic HTML, screen reader support, focus indicators).
+- **NFR-009 (Deployment)**: The feature must be compatible with a static site deployment on Vercel.
 
 ## Success Criteria *(mandatory)*
 

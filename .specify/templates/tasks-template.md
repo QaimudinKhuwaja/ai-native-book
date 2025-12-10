@@ -30,15 +30,15 @@ Assuming a Docusaurus 3 structure:
 
 **Purpose**: Final review and improvements that affect multiple user stories, ensuring constitutional alignment.
 
-- [ ] TXXX [P] Accessibility Audit: Manually test all new UI components for keyboard navigation, screen reader compatibility, and ARIA compliance.
-- [ ] TXXX [P] Performance Audit: Profile the application using Lighthouse/PageSpeed Insights. Ensure FCP is < 1.5s and bundle size is within the 150KB limit.
-- [ ] TXXX [P] Responsive UI/UX Review: Test the application on various devices (mobile, tablet, desktop) to confirm mobile-first design and consistent UX.
-- [ ] TXXX [P] Theming Review: Verify that all new components work correctly in both dark and light modes.
-- [ ] TXXX [P] Code Refactoring & Reusability: Review new components for potential refactoring into more reusable parts. Ensure TypeScript strict mode is enforced.
-- [ ] TXXX [P] Documentation: Update `README.md` or any relevant developer documentation for new components or features.
-- [ ] TXXX Security Hardening: Review for common web vulnerabilities (XSS, CSRF, etc.).
-- [ ] TXXX Run `quickstart.md` validation: Ensure the project's quickstart guide is up-to-date and works as expected.
-- [ ] TXXX Final Deployment to Vercel: Ensure the Docusaurus site is correctly built and deployed to Vercel (free tier).
+- [ ] TXXX [P] **Core Vision Alignment**: Review the implemented features to ensure they align with the project's core vision.
+- [ ] TXXX [P] **Core Philosophy Alignment**: Ensure the implementation reflects the core philosophy of embodied AI.
+- [ ] TXXX [P] **UI Principles Audit**: Manually test all new UI components for mobile-first responsiveness, glassmorphism, and gradient usage.
+- [ ] TXXX [P] **Technology Standards Audit**: Verify that the implementation adheres to the technology standards (Docusaurus, Tailwind, MDX).
+- [ ] TXXX [P] **Structure Audit**: Check that the 4-page structure and 5x2 chapter/topic model are correctly implemented.
+- [ ] TXXX [P] **Navigation Audit**: Test navigation for keyboard accessibility and correct implementation of the sticky bottom navbar (mobile) and sidebar (desktop).
+- [ ] TXXX [P] **Performance Audit**: Profile the application using Lighthouse/PageSpeed Insights to ensure fast initial load and minimal scripts.
+- [ ] TXXX [P] **Accessibility Audit**: Manually test all new UI components for keyboard navigation, screen reader compatibility, and ARIA compliance.
+- [ ] TXXX [P] **Deployment Audit**: Ensure the Docusaurus site is correctly built and deployed to Vercel (free tier).
 
 ## Dependencies & Execution Order
 

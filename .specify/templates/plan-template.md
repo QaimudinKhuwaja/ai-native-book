@@ -25,15 +25,15 @@
 
 *GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
 
-- [ ] **UI Libraries**: Is only `Tailwind CSS` used for styling? No other external UI component libraries are permitted.
-- [ ] **Design**: Is the UI mobile-first? Does it incorporate glassmorphism and gradients?
-- [ ] **Content**: Is all book content authored in MDX? Is it structured into 5 chapters, each with 2 topics? Is it located in `/content/chapters/` (or Docusaurus equivalent)?
-- [ ] **Theme**: Does the application support both dark and light modes with a toggle?
-- [ ] **Performance**: Is the FCP under 1.5s? Is the bundle size (sans images) under 150KB?
-- [ ] **Accessibility**: Is the application 100% accessible (ARIA, keyboard navigation)?
-- [ ] **Code Quality**: Is TypeScript `strict` mode enabled? Are components reusable?
-- [ ] **Constraints**: Are there exactly 4 pages (Home, Book, About, Contact)? Is deployment targeting Vercel?
-- [ ] **Tech Stack**: Does the implementation use Docusaurus 3, Tailwind, and MDX?
+- [ ] **Core Vision**: Does the feature align with the vision of a premium, mobile-first educational book on Physical AI?
+- [ ] **Core Philosophy**: Does the feature represent AI as embodied intelligence?
+- [ ] **UI Principles**: Is the UI mobile-first? Does it use glassmorphism, soft gradients, and a sticky mobile bottom nav?
+- [ ] **Technology Standards**: Is the feature built with Docusaurus, Tailwind CSS, and MDX?
+- [ ] **Structure**: Does the feature adhere to the 4-page site structure and the 5x2 chapter/topic model?
+- [ ] **Navigation**: Is the navigation keyboard-accessible and implemented with a sticky bottom navbar (mobile) and sidebar (desktop)?
+- [ ] **Performance**: Is the feature optimized for a fast initial load, lazy-loading, and minimal scripts?
+- [ ] **Accessibility**: Does the feature meet accessibility standards (semantic HTML, screen reader support, focus indicators)?
+- [ ] **Deployment**: Is the feature compatible with a static site deployment on Vercel?
 
 ## Project Structure
 
