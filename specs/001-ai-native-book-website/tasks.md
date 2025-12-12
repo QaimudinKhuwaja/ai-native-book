@@ -95,6 +95,10 @@ Assuming a Docusaurus 3 structure:
 - [X] T031 [P] Documentation: Update `README.md` or any relevant developer documentation for new components or features.
 - [X] T032 Security Hardening: Review for common web vulnerabilities (XSS, CSRF, etc.).
 - [X] T033 Run `quickstart.md` validation: Ensure the project's quickstart guide is up-to-date and works as expected.
+- [ ] T034 [P] Deployment: Deploy the static site to Vercel (constitution.md IX, spec.md SC-005).
+- [ ] T035 [P] Implement Missing MDX Handling: Display "Content Not Available" message for missing/empty chapter MDX files (spec.md EC-001).
+- [ ] T036 [P] Implement Fast Scrolling Progress Bar Behavior: Ensure smooth progress bar updates with debouncing during fast scrolling (spec.md EC-002).
+- [ ] T037 [P] Implement Waitlist Form Feedback: Provide "Thank You!" on success and clear error messages on failure for waitlist form submission (spec.md EC-003).
 
 ## Dependencies & Execution Order
 

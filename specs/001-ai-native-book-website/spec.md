@@ -46,9 +46,9 @@ As a reader, I want the website to be perfectly readable and usable on my mobile
 
 
 ### Edge Cases
-- What happens when a chapter's MDX file is missing or empty?
-- How does the progress bar behave if the user scrolls very quickly?
-- What feedback does the user get when they submit the waitlist form?
+- **EC-001 (Missing/Empty MDX)**: If a chapter's MDX file is missing or empty, the system MUST display a user-friendly "Content Not Available" message for that chapter, and it MUST NOT crash or show a blank page. The chapter navigation should remain functional for other available chapters.
+- **EC-002 (Fast Scrolling Progress Bar)**: When the user scrolls very quickly, the progress bar MUST update smoothly without jitter or lag, reflecting the current scroll position accurately after a short debounce period (e.g., 100ms) to optimize performance.
+- **EC-003 (Waitlist Form Feedback)**: Upon successful submission of the waitlist form, the user MUST receive a "Thank You!" message displayed prominently near the form. If submission fails (e.g., due to local storage issues or invalid input), an appropriate error message MUST be displayed, guiding the user on how to proceed.
 
 ## Requirements *(mandatory)*
 
@@ -75,7 +75,7 @@ As a reader, I want the website to be perfectly readable and usable on my mobile
 - **NFR-001 (Performance)**: The feature must not negatively impact the site's performance goals (FCP < 1.5s, bundle size < 150KB). All new components must be optimized.
 - **NFR-002 (Accessibility)**: All UI elements must be fully accessible, adhering to ARIA standards and supporting keyboard navigation.
 - **NFR-003 (Design)**: The feature's UI must be mobile-first and align with the established glassmorphism and gradient design language.
-- **NFR-004 (Technology)**: The feature must be implemented using the approved technology stack (Next.js, TypeScript, Tailwind CSS, shadcn/ui, MDX).
+- **NFR-004 (Technology)**: The feature must be implemented using the approved technology stack (Docusaurus 3, TypeScript, Tailwind CSS, MDX).
 - **NFR-005 (Code Quality)**: Code must be written in TypeScript strict mode, and new components should be designed for reusability.
 
 ## Success Criteria *(mandatory)*

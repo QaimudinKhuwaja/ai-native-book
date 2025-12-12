@@ -18,3 +18,13 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# AI-Native Book Website Additions
+/dist
+*.log
+.env*
+Thumbs.db
+*.tmp
+*.swp
+.vscode/
+.idea/

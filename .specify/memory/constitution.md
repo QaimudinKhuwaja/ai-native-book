@@ -47,7 +47,7 @@ AI is to be represented as intelligence inside a physical body, grounded in real
 The user interface will adhere to mobile-first layouts, utilizing glassmorphism with soft gradients. It will feature a sticky mobile bottom navigation, smooth chapter transitions, dark/light modes, large readable typography, and soft blur code backgrounds.
 
 ### IV. Technology Standards
-The project will be built on a Docusaurus base, with Tailwind CSS for all styling. Book chapters will be MDX-driven, composed of reusable UI blocks, and located in `/content/chapters/`.
+The project will be built on a Docusaurus base, with Tailwind CSS for all styling. Book chapters will be MDX-driven, composed of reusable UI blocks, and located in `docs/`.
 
 ### V. Structure
 The website will consist of only four pages: Home, Book, About, and Contact. The book itself will be composed of five chapters, with each chapter containing two topics.
