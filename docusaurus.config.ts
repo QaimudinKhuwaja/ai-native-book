@@ -65,7 +65,7 @@ const config: Config = {
       },
       items: [
         {to: '/', label: 'Home', position: 'left'},
-        {to: '/docs/architecture/robot-architecture', label: 'Book', position: 'left'}, // ✅ fixed safe link
+        {to: '/docs/introduction/what-is-physical-ai', label: 'Book', position: 'left'}, // ✅ fixed safe link
         {to: '/about', label: 'About', position: 'left'},
         {to: '/contact', label: 'Contact', position: 'left'},
         {
