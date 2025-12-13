@@ -13,7 +13,7 @@ const config: Config = {
     v4: true,
   },
 
-  url: 'https://physical-ai-human.vercel.app',
+  url: 'https://ai-native-book-seven.vercel.app',
   baseUrl: '/',
 
   organizationName: 'QaimudinKhuwaja',
