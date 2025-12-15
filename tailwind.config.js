@@ -40,6 +40,21 @@ module.exports = {
         'gradient-soft': 'linear-gradient(135deg, rgba(75, 185, 180, 0.1), rgba(51, 146, 93, 0.1))',
         'gradient-soft-dark': 'linear-gradient(135deg, rgba(56, 102, 170, 0.1), rgba(45, 213, 176, 0.1))',
       },
+      keyframes: {
+        'fade-in-down': {
+          '0%': {
+            opacity: '0',
+            transform: 'translateY(-10px)',
+          },
+          '100%': {
+            opacity: '1',
+            transform: 'translateY(0)',
+          },
+        },
+      },
+      animation: {
+        'fade-in-down': 'fade-in-down 0.3s ease-out',
+      },
     },
   },
   plugins: [
