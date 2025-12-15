@@ -27,19 +27,6 @@ module.exports = {
           900: '#0d3332',
         },
       },
-      backdropFilter: {
-        'blur-sm': 'blur(4px)',
-        'blur-md': 'blur(12px)',
-        'blur-lg': 'blur(16px)',
-      },
-      backgroundColor: {
-        'glassmorphism': 'rgba(255, 255, 255, 0.1)',
-        'glassmorphism-dark': 'rgba(30, 30, 30, 0.1)',
-      },
-      backgroundImage: {
-        'gradient-soft': 'linear-gradient(135deg, rgba(75, 185, 180, 0.1), rgba(51, 146, 93, 0.1))',
-        'gradient-soft-dark': 'linear-gradient(135deg, rgba(56, 102, 170, 0.1), rgba(45, 213, 176, 0.1))',
-      },
       keyframes: {
         'fade-in-down': {
           '0%': {

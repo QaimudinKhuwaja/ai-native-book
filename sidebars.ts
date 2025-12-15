@@ -53,6 +53,7 @@ const sidebars: SidebarsConfig = {
       items: [
         'implementation/building-systems',
         'implementation/deploying-ai-robots',
+        'implementation/rag-docusaurus-cohere-qdrant',
       ],
     },
     {

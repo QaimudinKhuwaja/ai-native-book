@@ -111,6 +111,7 @@
 - **NFR-007 (Performance)**: The feature must be optimized for a fast initial load, lazy-loading, and minimal scripts.
 - **NFR-008 (Accessibility)**: The feature must meet accessibility standards (semantic HTML, screen reader support, focus indicators).
 - **NFR-009 (Deployment)**: The feature must be compatible with a static site deployment on Vercel.
+- **NFR-010 (RAG Chatbot)**: The feature must adhere to the RAG chatbot principles (zero hallucination, privacy, Cohere embeddings, Qdrant Cloud).
 
 ## Success Criteria *(mandatory)*
 

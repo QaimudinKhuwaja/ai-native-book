@@ -1,5 +1,5 @@
 import React from 'react';
-
+import StaticChatbot from './StaticChatbot';
 
 function HomeHero() {
   return (
@@ -45,11 +45,14 @@ function HomeHero() {
             >
               Start Reading
             </a>
+            
           </div>
+          
         </div>
 
         {/* RIGHT SIDE – BOOK IMAGE */}
         <div style={{ display: "flex", justifyContent: "center" }}>
+          
           <img
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTi0k4bC6dWJR_n-pRppHi6nEs3kec3zNFTVA&s"
             alt="Book Cover"
@@ -59,8 +62,11 @@ function HomeHero() {
               boxShadow: "0 8px 25px rgba(0,0,0,0.6)",
             }}
           />
+          
         </div>
+        
       </div>
+      <StaticChatbot />
     </div>
   );
 }

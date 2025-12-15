@@ -27,12 +27,12 @@ function DocItemWrapped(props: Props): JSX.Element {
       <div
         style={{
           position: 'fixed',
-          bottom: 0,
+          bottom: '60px', // Adjusted to account for floating chat button (5px height + ~55px margin)
           left: 0,
           width: '100%',
           height: '5px',
           backgroundColor: 'lightblue', // Base of the progress bar
-          zIndex: 9999, // Ensure it's above other content
+          zIndex: 9998, // Slightly lower than chat button z-index
         }}
       >
         <div

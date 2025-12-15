@@ -1,28 +1,11 @@
 <!--
 ---
 sync_impact_report:
-  version_change: "1.0.1 → 2.0.0"
-  modified_principles:
-    - old: "I. Zero External UI Libraries Except Tailwind"
-      new: "I. Core Vision"
-    - old: "II. Mobile-First, Glassmorphism + Gradient Design"
-      new: "II. Core Philosophy"
-    - old: "III. MDX for All Book Content"
-      new: "III. UI Principles"
-    - old: "IV. Dark/Light Mode Toggle"
-      new: "IV. Technology Standards"
-    - old: "V. Lightning Fast Performance"
-      new: "V. Structure"
-    - old: "VI. 100% Accessible (ARIA + Keyboard Nav)"
-      new: "VI. Navigation"
-    - old: "VII. TypeScript Strict Mode & Reusable Components"
-      new: "VII. Performance"
+  version_change: "2.0.0 → 2.1.0"
+  modified_principles: []
   added_sections:
-    - "Accessibility"
-    - "Deployment"
-  removed_sections:
-    - "Technology Stack"
-    - "Constraints"
+    - "X. RAG Chatbot"
+  removed_sections: []
   updated_templates:
     - path: ".specify/templates/plan-template.md"
       status: "pending"
@@ -64,7 +47,14 @@ The platform must adhere to the highest accessibility standards, including seman
 ### IX. Deployment
 The project will be deployed as a static site on Vercel's free tier.
 
+### X. RAG Chatbot
+An integrated RAG (Retrieval-Augmented Generation) chatbot will be provided. It MUST adhere to the following rules:
+-   **Zero Hallucination**: Answers MUST be generated *only* from the retrieved book content.
+-   **Privacy**: The chatbot MUST be designed to protect user privacy.
+-   **Embedding Model**: The chatbot MUST use Cohere embeddings. The use of OpenAI models is prohibited.
+-   **Vector Store**: The chatbot MUST use Qdrant Cloud for all vector storage.
+
 ## Governance
 All pull requests and code reviews must verify compliance with this constitution. Any deviation requires an explicit exemption documented in an Architectural Decision Record (ADR).
 
-**Version**: 2.0.0 | **Ratified**: 2025-12-10 | **Last Amended**: 2025-12-10
+**Version**: 2.1.0 | **Ratified**: 2025-12-10 | **Last Amended**: 2025-12-14

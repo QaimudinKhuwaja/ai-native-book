@@ -34,6 +34,7 @@
 - [ ] **Performance**: Is the feature optimized for a fast initial load, lazy-loading, and minimal scripts?
 - [ ] **Accessibility**: Does the feature meet accessibility standards (semantic HTML, screen reader support, focus indicators)?
 - [ ] **Deployment**: Is the feature compatible with a static site deployment on Vercel?
+- [ ] **RAG Chatbot**: Does the feature adhere to the RAG chatbot principles (zero hallucination, privacy, Cohere embeddings, Qdrant Cloud)?
 
 ## Project Structure
 

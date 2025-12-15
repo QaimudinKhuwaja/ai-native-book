@@ -39,6 +39,7 @@ Assuming a Docusaurus 3 structure:
 - [ ] TXXX [P] **Performance Audit**: Profile the application using Lighthouse/PageSpeed Insights to ensure fast initial load and minimal scripts.
 - [ ] TXXX [P] **Accessibility Audit**: Manually test all new UI components for keyboard navigation, screen reader compatibility, and ARIA compliance.
 - [ ] TXXX [P] **Deployment Audit**: Ensure the Docusaurus site is correctly built and deployed to Vercel (free tier).
+- [ ] TXXX [P] **RAG Chatbot Audit**: Verify that the RAG chatbot implementation adheres to the RAG chatbot principles (zero hallucination, privacy, Cohere embeddings, Qdrant Cloud).
 
 ## Dependencies & Execution Order
 
